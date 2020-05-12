@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Assignment 5</title>
+<link rel="stylesheet" href ="layout-styles.css">
+<script src="scripts/menujava.js"> </script>
+
+<script src="scripts/jquery.js"> </script>
+
+
+
+
+
+<script>
+    $(function(){
+      $("#menuContent").load("menu.html");
+    });
+    </script>
+
+<!-- page-specific scripts -->
+
+
+
+</head>
+
+<body class="body" id="body">
+
+<!-- menu start -->
+
+<div id="menuContent"></div>
+
+
+<!-- menu end -->
+
+
+<div class="headertitle"> Assignment 5 </div>
+
+<div class="textbox">
+  <h2>Spirograph Generator</h2>
+  <p>
+    For this assignment we were required to create code to generate a spirograph and animate the spirograph in a canvas using JavaScript. <br/> <br/>
+    Please Click the "Generate Spirograph" button to generate a graph! <br/> <br/>
+
+
+<canvas id="myCanvas" width="400" height="400" style="border:5px solid black; border-radius: 20px;">
+Your browser does not support the HTML5 canvas tag.</canvas> <br/>
+    <button onclick="doDrawing();">Generate Spirograph</button> <br/> <br/>
+
+    The prototype version of this assignment can be found on JsFiddle <a href="https://jsfiddle.net/westondavidson/o54jucL3/">by clicking here</a><br/><br/>
+    The JsFiddle version of this assignment is currently in testing, as additional features are being added to my code. The output of the JsFiddle does not represent the submitted assignment.<br/><br/>
+
+
+</div>
+
+
+<script src="scripts/spirograph.js"></script>
+
+</body>

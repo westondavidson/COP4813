@@ -1,0 +1,238 @@
+
+
+
+/*body basic ID/class */
+#body
+{	background-color: #96A7D4 !important;
+	font-family: arial;
+
+}
+
+.body
+{	background-color: #96A7D4 !important;
+	font-family: arial;
+
+}
+
+#menucontent{
+float: center !important;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:100;
+	display: block;
+
+}
+
+
+/*header class*/
+
+.headertitle{
+
+	margin: auto;
+	margin-bottom: 15px;
+	float: center;
+	border-bottom: 5px solid #000000;
+	border-bottom-width: 10%;
+	width: 50%;
+	text-align: center;
+	font-size: 45px;
+	padding-bottom: 10px;
+	overflow: hidden;
+	white-space: nowrap;
+	border-radius: 4px;
+}
+
+/*textbox main page content*/
+
+.textbox{
+	margin: auto;
+	float: center;
+	border: 5px solid #000000;
+	padding: 15px;
+	width: 50%;
+	border-radius: 25px;
+	box-shadow: 2px 3px 5px black;
+	background-color: #AF932E;
+
+
+}
+
+.textbox p {
+		font-size: 1vw;
+}
+.textbox h3{
+	font-size: 2vw;
+}
+.textbox ul {
+	font-size: 1vw;
+}
+
+
+/* Medium Image Styling */
+
+.imagemedium{
+	max-width: 25%;
+	max-height: 25%;
+	border: 3px solid #000000;
+}
+
+/* Div styling for centering objects */
+
+.centerclass
+{
+	margin:auto;
+
+}
+
+/* forms CSS styling */
+
+input[type=text], input[type=date], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* button styling */
+.button
+{
+	background-color: #96A7D4; /*page background color*/
+	color: black;
+	border: 5px solid #000000;
+	border-width: 3px;
+	text-align: center;
+	display: inline-block;
+	padding: 10px 15px;
+	font-size: 16px;
+	border-radius: 4px;
+	box-shadow: 2px 3px 5px black;
+
+}
+
+/* canvas styling */
+.canvas{
+	border: 5px solid #000000;
+	padding: 1px;
+	border-radius: 25px;
+	box-shadow: 2px 3px 5px black;
+	background-color: #96A7D4;
+
+}
+
+
+/* table styling */
+
+table{
+width: 100%;
+
+}
+td{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	border-top: 2px solid black;
+	border-collapse:collapse;
+	border-top-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* NEW Dropdown menu styling */
+#menu2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0000;
+
+}
+
+#menu2 li {
+	list-style-type: none;
+  float: left;
+     background-color: #333 !important;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+#menu2 li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#menu2 li a:hover, #menu2 .dropdown:hover .dropbtn {
+  background-color: #AF932E;
+}
+
+#menu2 li .dropdown {
+  display: inline-block;
+}
+
+#menu2 .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#menu2 .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+#menu2 .dropdown-content a:hover {background-color: #AF932E;}
+
+#menu2 .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*End new styling */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*simple drop down menu css*/

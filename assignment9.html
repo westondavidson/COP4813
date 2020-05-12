@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Assignment 9</title>
+<link rel="stylesheet" href ="layout-styles.css">
+<script src="scripts/menujava.js"> </script>
+
+<script src="scripts/jquery.js"> </script>
+
+
+
+
+
+<script>
+    $(function(){
+      $("#menuContent").load("menu.html");
+    });
+    </script>
+
+<script>
+
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+
+    var i, j, x = "";
+
+    for (i in myObj.Companies) {
+      x += "<h4>" + myObj.Companies[i].name + "</h4>";
+      for (j in myObj.Companies[i].Products){
+        x += "<li>" + myObj.Companies[i].Products[j] + "</li>";
+
+      }
+
+    }
+document.getElementById("output").innerHTML = x;
+    //document.getElementById("output").innerHTML = myObj.Companies[0].name;
+  }
+};
+xmlhttp.open("GET", "JSON_A6.json", true);
+xmlhttp.send();
+
+</script>
+
+
+
+<!-- page-specific scripts -->
+
+
+
+</head>
+
+<body class="body" id="body">
+
+<!-- menu start -->
+
+<div id="menuContent"></div>
+
+
+<!-- menu end -->
+
+<script>
+
+
+
+</script>
+
+<div class="headertitle"> Assignment 9 </div>
+
+<div class="textbox">
+  <h3>Canvas Animation</h3>
+  <p>This assignment asked us to create a simple animation within an HTML Canvas, and provide one user input option to affect the canvas.
+    <br/> <br/>
+    <h1>Bouncing Ball Animation</h1>
+  </p>
+<p>
+  <canvas id = "myCanvas" class = "canvas" width = "300" height = "300"></canvas>
+  <br/><br/>
+  <button id = "speedUp" class = "button" onclick = "ballSpeedUp()">
+  Click here to speed the ball up!
+  </button>
+
+</p>
+
+</div>
+
+
+
+
+<script src="scripts/assignment9.js"> </script>
+</body>

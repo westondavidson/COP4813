@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Assignment 4</title>
+<link rel="stylesheet" href ="layout-styles.css">
+<script src="scripts/menujava.js"> </script>
+
+<script src="scripts/jquery.js"> </script>
+
+<script src="scripts/sinewave.js"></script>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+
+<script>
+    $(function(){
+      $("#menuContent").load("menu.html");
+    });
+    </script>
+
+<!-- page-specific scripts -->
+
+
+
+</head>
+
+<body class="body" id="body">
+
+<!-- menu start -->
+
+<div id="menuContent"></div>
+
+
+<!-- menu end -->
+
+
+<div class="headertitle"> Assignment 4 </div>
+
+<div class="textbox">
+  <h2>Sine wave/Sinusoidal Formula Calculator</h2>
+  <p>
+    For this assignment we were required to create a calculator for a formula of our choice in JavaScript. <br/>
+    I chose to use the following formula for a sine wave: <br/> <br/>
+    y = a sin (b x + c) <br/><br/>
+    The prototype version of this assignment can be found on JsFiddle <a href="https://jsfiddle.net/westondavidson/17k2403v/">by clicking here</a><br/><br/>
+    Please fill out the following input boxes and choose "Calculate" to show the formula output, or "Plot" to show the charted formula: <br/><br/>
+
+
+    Amplitude a = <input type="text" id="a" size="5" value="10"/><br/>
+x velocity/oscillation width b = <input type="text" id="b" size="5" value=".25"/><br/>
+Sine wave starting point/phase c = <input type="text" id="c" size="5" value=".2"/><br/>
+X Min = <input type="text" id="xmin" value="-10" size="5"/>
+X Max = <input type="text" id="xmax" value="10" size="5"/><br/><br/>
+<input type="button" value="Calculate" id="calculate" onclick="calculateFunction()"/>
+<input type="button" value="Plot" id="plot" onclick="plotFunction()" />
+
+<p id="output"> </p>
+
+<div id="container" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+
+
+
+
+</div>
+
+
+
+
+</body>

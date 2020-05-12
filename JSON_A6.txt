@@ -1,0 +1,64 @@
+{
+	"Companies": [
+
+		{
+			"name": "Native Instruments",
+
+			"Products": [
+				"Komplete",
+				"Massive",
+				"Battery",
+				"Transient Master",
+				"Guitar Rig"
+			]
+		}, {
+			"name": "U-He",
+
+			"Products": [
+				"Diva",
+				"Zebra",
+				"Hive",
+				"Bazille",
+				"Presswerk"
+
+			]
+		},
+
+		{
+			"name": "Xfer Records",
+
+			"Products": [
+				"Serum",
+				"LFOTool",
+				"OTT",
+				"Dimension Expander",
+				"Cthulhu"
+			]
+		},
+
+		{
+			"name": "iZotope",
+
+			"Products": [
+				"Ozone 9",
+				"VocalSynth 2",
+				"Nectar 3",
+				"Neutron 3",
+				"Trash"
+			]
+		},
+
+		{
+			"name": "Waves",
+
+			"Products": [
+				"H-Delay",
+				"CLA-2A",
+				"CLA Vocals",
+				"SSL G-Master Buss Compressor",
+				"L2 Ultramaximizer"
+			]
+		}
+
+	]
+}

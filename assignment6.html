@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Assignment 6</title>
+<link rel="stylesheet" href ="layout-styles.css">
+<script src="scripts/menujava.js"> </script>
+
+<script src="scripts/jquery.js"> </script>
+
+
+
+
+
+<script>
+    $(function(){
+      $("#menuContent").load("menu.html");
+    });
+    </script>
+
+<script>
+
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+
+    var i, j, x = "";
+
+    for (i in myObj.Companies) {
+      x += "<h4>" + myObj.Companies[i].name + "</h4>";
+      for (j in myObj.Companies[i].Products){
+        x += "<li>" + myObj.Companies[i].Products[j] + "</li>";
+
+      }
+
+    }
+document.getElementById("output").innerHTML = x;
+    //document.getElementById("output").innerHTML = myObj.Companies[0].name;
+  }
+};
+xmlhttp.open("GET", "JSON_A6.json", true);
+xmlhttp.send();
+
+</script>
+
+
+
+<!-- page-specific scripts -->
+
+
+
+</head>
+
+<body class="body" id="body">
+
+<!-- menu start -->
+
+<div id="menuContent"></div>
+
+
+<!-- menu end -->
+
+<script>
+
+
+
+</script>
+
+<div class="headertitle"> Assignment 6 </div>
+
+<div class="textbox">
+  <h3>JSON Output</h3>
+  <p>This assignment required us to create data in a JSON file, call the JSON data file, and then output the data in a readable format.
+    I created a small list of the top five VST plugin companies, and their top five most popular products, as an example.
+    <br/> <br/>
+    <h1>Popular VST Developers:</h1>
+  </p>
+<p id = "output"> </p>
+<p>
+
+
+</p>
+
+</div>
+
+
+
+
+
+</body>

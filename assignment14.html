@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Assignment 14</title>
+<link rel="stylesheet" href ="layout-styles.css">
+<script src="scripts/menujava.js"> </script>
+<script src="scripts/jquery.js"> </script>
+<script type = "text/javascript" src="scripts/gameV2/phaser.js"></script>
+<script type = "text/javascript" src="scripts/gameV2/Scene1.js"></script>
+<script type = "text/javascript" src="scripts/gameV2/Scene2.js"></script>
+<script type = "text/javascript" src="scripts/gameV2/Scene3.js"></script>
+<script type = "text/javascript" src="scripts/gameV2/game.js"></script>
+
+
+
+
+
+<script>
+    $(function(){
+      $("#menuContent").load("menu.html");
+    });
+    </script>
+
+
+
+<!-- page-specific scripts -->
+
+
+
+</head>
+
+<body class="body" id="body">
+
+<!-- menu start -->
+
+<div id="menuContent"></div>
+
+
+<!-- menu end -->
+
+
+
+<div class="headertitle"> Assignment 14 </div>
+
+<div class="textbox">
+  <h3>Creating a Game in Javascript - Updated Game</h3>
+  <p>This assignment tasked the class with creating a game in javascript using an engine of our choice. I chose to use Phaser 3, a versatile 2D
+    Javascript-based engine. This assignment is a continuation of Assignment 13, in which the class updated their games with new mechanics/polish for resubmission.
+    <br/><br/>This project is still in development, see below the game for a list of upcoming planned features/additions to the game, as well as current features I'm happy with.
+
+    <br/> <br/>
+    <h1>Game Title: Look Out Below!</h1>
+  <div id="game"> </div>
+  </p>
+<p>
+  <h1>Upcoming Features/Additions</h1>
+  <ul>
+    <li> Sprites for the player character and falling objects - Completed in new iteration</li>
+    <li> Animations for falling objects and player movement, as well as UI elements - Completed in new iteration</li>
+    <li> Updated start screen with easier to read instructions/UI and overall design - Completed in new iteration</li>
+    <li> In-game "shop" where players spend score points to increase movement speed, add health, etc. </li>
+    <li> Music/SFX - Music added, additional SFX to be added in the near future </li>
+    <li> Additional difficulty increase the longer the game goes </li>
+  </ul>
+  <br/>
+  <h1>Features I'm happy with</h1>
+  <ul>
+    <li> Parralax background scrolling </li>
+    <li> In-game physics engine manipulation </li>
+    <li> Scene transitions </li>
+    <li> Object rendering/destroying based on camera view </li>
+    <li> Working Collision (used to detect when object hits player character) </li>
+  </ul>
+</p>
+</br>
+<p>
+  These features are very manageable, with the exception of the in-game shop, which may take longer to program. With this iteration of the game I updated the player physics to be more realistic, added animations for the character model,
+  made the floor itself scroll with the player to simulate a running effect, updated the UI, wrote and implemented a short chiptune-esque song for the background of gameplay, and added sprites and animations to the falling objects/animals. There are still bugs I want to fix and game mechanics I would like to implement/update. I will continue to work on this project until I'm happy with the results!
+ </p>
+</div>
+
+
+
+</body>
